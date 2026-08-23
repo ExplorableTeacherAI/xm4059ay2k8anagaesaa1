@@ -7,8 +7,8 @@
     "graphs-straight-line-heading",
     "graphs-straight-line-setup",
     "graphs-straight-line-worked",
-    "graphs-straight-line-visual",
     "graphs-straight-line-table",
+    "graphs-straight-line-visual",
     "graphs-straight-line-insight",
     "graphs-straight-line-question-speed",
     "graphs-straight-line-question-shape",
@@ -97,7 +97,8 @@
       "type": "split",
       "columns": [
         [
-          "graphs-straight-line-worked"
+          "graphs-straight-line-worked",
+          "graphs-straight-line-table"
         ],
         [
           "graphs-straight-line-visual"
@@ -108,18 +109,6 @@
         "gap": "lg",
         "reverse": false,
         "align": "start"
-      }
-    },
-    {
-      "id": "layout-graphs-straight-line-pair",
-      "type": "stack",
-      "columns": [
-        [
-          "graphs-straight-line-table"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
       }
     },
     {
