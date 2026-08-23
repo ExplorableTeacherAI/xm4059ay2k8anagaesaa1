@@ -82,8 +82,55 @@ export interface VariableDefinition {
  */
 export const variableDefinitions: Record<string, VariableDefinition> = {
     // ========================================
-    // ADD YOUR VARIABLES HERE
+    // SECTION 2 — A Straight Line and Its Multiplier
     // ========================================
+
+    /** The ONE shared quantity of the linked pair: the line and the table both read it. */
+    coinValue: {
+        defaultValue: 1,
+        type: 'number',
+        label: 'Speed per coin',
+        description: 'How much speed a single coin buys (the multiplier in speed = a x coins)',
+        min: 0.5,
+        max: 3,
+        step: 0.1,
+        color: '#62D0AD',
+    },
+
+    /** Shared highlight channel: '' | 'coin-1' ... 'coin-4'. Written by the line, the table and the prose. */
+    coinLineHighlight: {
+        defaultValue: '',
+        type: 'text',
+        label: 'Coin row highlight',
+        description: 'Which coins row is highlighted across both the line and the table',
+        color: '#62D0AD',
+        bgColor: 'rgba(98, 208, 173, 0.22)',
+    },
+
+    /** Assessment — applying the multiplier to new values. */
+    answerStraightLineSpeed: {
+        defaultValue: '',
+        type: 'text',
+        label: 'Speed for five coins',
+        description: 'Student answer: speed bought by 5 coins when a coin is worth 2',
+        placeholder: '???',
+        correctAnswer: '10',
+        color: '#8E90F5',
+        bgColor: 'rgba(142, 144, 245, 0.15)',
+    },
+
+    /** Assessment — what raising the multiplier does to the shape. */
+    answerStraightLineShape: {
+        defaultValue: '',
+        type: 'select',
+        label: 'Effect of a bigger coin value',
+        description: 'Student answer: what a bigger coin value does to the line',
+        placeholder: '???',
+        options: ['tilt more steeply', 'shift upward', 'bend into a curve', 'slide to the right'],
+        correctAnswer: 'tilt more steeply',
+        color: '#8E90F5',
+        bgColor: 'rgba(142, 144, 245, 0.15)',
+    },
 
     // Uncomment and modify these examples for your lesson:
 
