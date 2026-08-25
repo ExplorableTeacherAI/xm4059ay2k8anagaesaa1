@@ -93,11 +93,22 @@
       }
     },
     {
+      "id": "editor-full-graphs-straight-line-worked",
+      "type": "stack",
+      "columns": [
+        [
+          "graphs-straight-line-worked"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
       "id": "layout-graphs-straight-line-worked",
       "type": "split",
       "columns": [
         [
-          "graphs-straight-line-worked",
           "graphs-straight-line-visual"
         ],
         [
