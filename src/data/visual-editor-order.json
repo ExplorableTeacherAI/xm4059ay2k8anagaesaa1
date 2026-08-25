@@ -94,16 +94,21 @@
     },
     {
       "id": "layout-graphs-straight-line-worked",
-      "type": "stack",
+      "type": "split",
       "columns": [
         [
           "graphs-straight-line-worked",
-          "graphs-straight-line-visual",
+          "graphs-straight-line-visual"
+        ],
+        [
           "graphs-straight-line-table"
         ]
       ],
       "props": {
-        "maxWidth": "xl"
+        "ratio": "1:1",
+        "gap": "lg",
+        "reverse": false,
+        "align": "start"
       }
     },
     {
